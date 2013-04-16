@@ -1,0 +1,1 @@
+To use, install PHP with EXIF module. http://php.net/manual/en/book.exif.php, just uncomment it in php.ini
