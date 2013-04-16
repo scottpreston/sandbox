@@ -1,35 +1,4 @@
 <?php
-
-//  Photo renaming scipt by mik01aj [ http://m01.pl/ ]
-//
-//  Requires PHP 5.
-//
-//  This script is free software; you can redistribute it and/or modify it
-//  under the terms of the GNU General Public License.
-
-$help = "USAGE: php $argv[0] [ OPTIONS ] [ DIRNAMES ]".'
-
-This script will let you rename all the photos in a given directory to names
-based on their dates from their EXIF tags, e.g. "DSCN3942.JPG" to
-"2008-02-14 17-35-16.JPG". This may be useful if you keep photos from different
-cameras in one folder and want to place them in the right order. Please note
-that if you run this script without -r option, it won\'t rename anything.
-
-Options:
-  -r           Rename the files, don\'t just show the preview
-  -v           Be verbose
-  -h           Process hidden files, too
-  -i           Show info (date and camera model) for each photo
-  -c <model>   Process only files taken with this camera model
-  -f <format>  Format date with given format.
-               For info about date formatting, please refer to php date()
-               function. If you wish to create directories, you can use the
-               / character and the directories will be created automatically.
-               If this option isn\'t set, "y-m-d His" is used.
-  -o <offset>  Add this time offset (in secconds, may be negative) to all dates.
-  -l           Convert file extensions to lowercase
-
-Please report any bugs to mik01aj@o2.pl';
 $o_switches=array('h', 'r', 'l', 'i', 'v');
 $o_strings=array('f', 'c', 'o');
 
